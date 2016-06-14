@@ -2,20 +2,20 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Posts on Penguin Power</title>
-    <link>http://replace-this-with-your-hugo-site.com/post/</link>
+    <link>https://penguinpowernz.github.io/post/</link>
     <description>Recent content in Posts on Penguin Power</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Tue, 14 Jun 2016 13:43:46 +1200</lastBuildDate>
-    <atom:link href="http://replace-this-with-your-hugo-site.com/post/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://penguinpowernz.github.io/post/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>Too many disks?</title>
-      <link>http://replace-this-with-your-hugo-site.com/post/too-many-disks/</link>
+      <link>https://penguinpowernz.github.io/2016/06/too-many-disks/</link>
       <pubDate>Tue, 14 Jun 2016 13:43:46 +1200</pubDate>
       
-      <guid>http://replace-this-with-your-hugo-site.com/post/too-many-disks/</guid>
-      <description>&lt;p&gt;I sometimes get confused with how many disks I have connected and which is which.  There is the &lt;code&gt;lsblk&lt;/code&gt; command which is cool and prints output in a tree format:&lt;/p&gt;
+      <guid>https://penguinpowernz.github.io/2016/06/too-many-disks/</guid>
+      <description>&lt;p&gt;I sometimes get confused with how many disks I have connected and which is which.  There is the &lt;code&gt;lsblk&lt;/code&gt; command which is cool and prints output in a tree format, however, I can&amp;rsquo;t see the model names of the disks in there.&lt;/p&gt;
 
 &lt;pre&gt;&lt;code class=&#34;language-sh&#34;&gt;NAME                  MAJ:MIN RM   SIZE RO TYPE MOUNTPOINT
 sda                     8:0    0 238.5G  0 disk
@@ -30,7 +30,7 @@ sdc                     8:32   0 465.8G  0 disk
 sr0                    11:0    1  1024M  0 rom  
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;p&gt;However, I can&amp;rsquo;t see the model names of the disks in there.  You can read this stuff out of the &lt;code&gt;/sys/block&lt;/code&gt; folder structure.  So I made a small ruby script to do that for me:&lt;/p&gt;
+&lt;p&gt;You can read this stuff out of the &lt;code&gt;/sys/block&lt;/code&gt; folder structure.  So I made a small ruby script to do that for me:&lt;/p&gt;
 
 &lt;pre&gt;&lt;code class=&#34;language-ruby&#34;&gt;#!/usr/bin/env ruby
 

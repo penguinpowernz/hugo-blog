@@ -4,7 +4,9 @@ draft = false
 title = "Too many disks?"
 +++
 
-I sometimes get confused with how many disks I have connected and which is which.  There is the `lsblk` command which is cool and prints output in a tree format:
+I sometimes get confused with how many disks I have connected and which is which.  There is the `lsblk` command which is cool and prints output in a tree format, however, I can't see the model names of the disks in there.
+
+<!--more-->
 
 ```sh
 NAME                  MAJ:MIN RM   SIZE RO TYPE MOUNTPOINT
@@ -20,7 +22,7 @@ sdc                     8:32   0 465.8G  0 disk
 sr0                    11:0    1  1024M  0 rom  
 ```
 
-However, I can't see the model names of the disks in there.  You can read this stuff out of the `/sys/block` folder structure.  So I made a small ruby script to do that for me:
+You can read this stuff out of the `/sys/block` folder structure.  So I made a small ruby script to do that for me:
 
 ```ruby
 #!/usr/bin/env ruby
