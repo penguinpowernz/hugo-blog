@@ -2,6 +2,7 @@ baseurl = "https://penguinpowernz.github.io/"
 languageCode = "en-us"
 title = "Penguin Power"
 Author = "Robert McLeod"
+theme = "blackburn"
 
 [permalinks]
   post = "/:year/:month/:title/"
