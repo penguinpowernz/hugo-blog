@@ -2,6 +2,8 @@
 date = "2016-06-14T13:43:46+12:00"
 draft = false
 title = "Too many disks?"
+topics = ["linux"]
+tags = ["scripts"]
 +++
 
 I sometimes get confused with how many disks I have connected and which is which.  There is the `lsblk` command which is cool and prints output in a tree format, however, I can't see the model names of the disks in there.
