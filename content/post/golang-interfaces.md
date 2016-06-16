@@ -95,7 +95,7 @@ func main() {
 One thing I like to do is when I'm getting an API object, but only using the GET method, I can narrow the scope to just that
 method:
 
-```go
+```golang
 
 type apiGetter interface {
   Get(string) []byte

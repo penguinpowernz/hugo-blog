@@ -9,7 +9,7 @@ theme = "blackburn"
 
 [Params]
 subtitle = "Doing awesome stuff with Linux"
-highlightjs = "androidstudio"
+highlightjs = "monokai-sublime"
 dateFormat = "02 Jan 2006, 15:04"
 
 
